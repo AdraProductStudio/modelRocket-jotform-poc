@@ -35,7 +35,7 @@ const Header = () => {
         aria-labelledby="offcanvasExampleLabel"
       >
         <div className="offcanvas-header">
-          <Link to={"/home"} className="w-100">
+          <Link to={"/home"} className="col-8">
             <img
               src={require('../Images/modelrocket_ai_logo.png')}
               alt='modelRocket-logo'
@@ -64,6 +64,24 @@ const Header = () => {
                   <NavLink to={"/home/update_client"} className="nav-link rounded">
                     <span className='pe-4'><BsBoxSeam className='fs-5' /></span>
                     Update client
+                  </NavLink>
+                </li>
+                <li className='col-12'>
+                  <NavLink to={"/home/view_onboarding_submission"} className="nav-link rounded">
+                    <span className='pe-4'><BsBoxSeam className='fs-5' /></span>
+                    View Onboarding Submission
+                  </NavLink>
+                </li>
+                <li className='col-12'>
+                  <NavLink to={"/home/view_live_customers"} className="nav-link rounded">
+                    <span className='pe-4'><BsBoxSeam className='fs-5' /></span>
+                    View Live Customers
+                  </NavLink>
+                </li>
+                <li className='col-12'>
+                  <NavLink to={"/home/mr_api_docs"} className="nav-link rounded">
+                    <span className='pe-4'><BsBoxSeam className='fs-5' /></span>
+                    MR Api Docs
                   </NavLink>
                 </li>
               </ul>

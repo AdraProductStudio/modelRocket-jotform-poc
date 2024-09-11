@@ -7,9 +7,9 @@ import Cookies from "js-cookie";
 
 const AuthentatePage = () => {
   const auth = {
-    token:Cookies.get("isLoggedIn")
+    token: Cookies.get("isLoggedIn")
   };
-  
+
   return (
     <>
       {auth.token ? (
@@ -19,8 +19,8 @@ const AuthentatePage = () => {
             <Toaster />
             <div className="col p-0 overflow-auto">
               <Header />
-              <div className="main-content-height overflow-auto px-3 pt-4"> 
-                <Outlet /> 
+              <div className="main-content-height overflow-auto px-3 pt-4">
+                <Outlet />
               </div>
             </div>
           </div>

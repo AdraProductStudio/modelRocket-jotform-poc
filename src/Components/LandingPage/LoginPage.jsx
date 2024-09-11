@@ -3,6 +3,8 @@ import toast, { Toaster } from "react-hot-toast";
 import { PiEyeLight, PiEyeSlash } from "react-icons/pi";
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
+import axiosInstance from "../Services/axiosInstance";
+import axios from "axios";
 
 const LoginPage = () => {
   const inputRef = useRef();
@@ -29,6 +31,8 @@ const LoginPage = () => {
     } else {
       setLoading(true);
       if (inputDetails.username === "matsuri" && inputDetails.password === "modelrocket"){
+        getToken()
+
         setTimeout(()=>{
           setLoading(false);
           navigate("/home")
@@ -41,6 +45,33 @@ const LoginPage = () => {
           toast.error("Could not authorize...Wrong username or password.")
         },1000)  
       }
+    }
+  };
+
+  const getToken = async () => {
+    try {
+      const username = "matsuri";
+      const password = "fc153ac36455604c6a6bcb3e22c0a4debfb746d59ad4a33a4b0d50f315206958d78da64e88957993e537e5ef235537a65ac0bc8fbaa725ae3e8e151617e82b81";
+
+      const basicAuth = "Basic " + btoa(`${username}:${password}`);
+
+      const response = await axios.get(
+        "https://consumerapi.matsuritech.com/gettoken",
+        {
+          headers: {
+            Authorization: basicAuth,
+          },
+        }
+      );
+
+      
+
+      if (response.data.error_code === 200) {
+        localStorage.setItem("token", response.data.data.token);
+      }
+    } catch (error) {
+      console.error("Error getting token:", error);
+      throw error;
     }
   };
 

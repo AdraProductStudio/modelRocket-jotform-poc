@@ -27,15 +27,33 @@ const Sidebar = () => {
 
                     <ul className="sidebar-middle-links nav align-content-start nav_list p-0">
                         <li className='col-12'>
-                            <NavLink to={"/home"} end className="nav-link rounded">
-                                <span className='pe-4 '><RxDashboard className='fs-5' /></span>
-                                Add client
+                            <NavLink to={"/home"} end className="nav-link rounded pe-0">
+                                <span className='pe-4'><RxDashboard className='fs-5' /></span>
+                                <span>Add client</span>
                             </NavLink>
                         </li>
                         <li className='col-12'>
-                            <NavLink to={"/home/update_client"} className="nav-link rounded">
+                            <NavLink to={"/home/update_client"} className="nav-link rounded pe-0">
                                 <span className='pe-4'><BsBoxSeam className='fs-5' /></span>
                                 Update client
+                            </NavLink>
+                        </li>
+                        <li className='col-12'>
+                            <NavLink to={"/home/view_onboarding_submission"} className="nav-link rounded pe-0">
+                                <span className='pe-4'><BsBoxSeam className='fs-5' /></span>
+                                Onboarding&nbsp;Submission
+                            </NavLink>
+                        </li>
+                        <li className='col-12'>
+                            <NavLink to={"/home/view_live_customers"} className="nav-link rounded pe-0">
+                                <span className='pe-4'><BsBoxSeam className='fs-5' /></span>
+                                Live&nbsp;Customers
+                            </NavLink>
+                        </li>
+                        <li className='col-12'>
+                            <NavLink to={"/home/mr_api_docs"} className="nav-link rounded pe-0">
+                                <span className='pe-4'><BsBoxSeam className='fs-5' /></span>
+                                MR Api Docs
                             </NavLink>
                         </li>
                     </ul>
