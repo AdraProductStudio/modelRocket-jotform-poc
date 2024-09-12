@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/modelRocket-jotform-poc/static/css/main.d2563879.css",
-    "main.js": "/modelRocket-jotform-poc/static/js/main.f11a8876.js",
+    "main.css": "/modelRocket-jotform-poc/static/css/main.1cd9f7d4.css",
+    "main.js": "/modelRocket-jotform-poc/static/js/main.d37efd82.js",
     "static/js/453.fc58dd71.chunk.js": "/modelRocket-jotform-poc/static/js/453.fc58dd71.chunk.js",
     "static/media/modelrocket_ai_logo.png": "/modelRocket-jotform-poc/static/media/modelrocket_ai_logo.ed3b09ca13ba36677227.png",
     "index.html": "/modelRocket-jotform-poc/index.html",
-    "main.d2563879.css.map": "/modelRocket-jotform-poc/static/css/main.d2563879.css.map",
-    "main.f11a8876.js.map": "/modelRocket-jotform-poc/static/js/main.f11a8876.js.map",
+    "main.1cd9f7d4.css.map": "/modelRocket-jotform-poc/static/css/main.1cd9f7d4.css.map",
+    "main.d37efd82.js.map": "/modelRocket-jotform-poc/static/js/main.d37efd82.js.map",
     "453.fc58dd71.chunk.js.map": "/modelRocket-jotform-poc/static/js/453.fc58dd71.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2563879.css",
-    "static/js/main.f11a8876.js"
+    "static/css/main.1cd9f7d4.css",
+    "static/js/main.d37efd82.js"
   ]
 }
