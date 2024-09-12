@@ -36,7 +36,6 @@ const ViewLiveCustomers = () => {
 
   const hanldeSelectedServices = (servicesData) => {
     const parsedServiceData = JSON.parse(servicesData)
-    console.log(parsedServiceData, clients)
 
     const seletedServicesAttribute = clients.map((v) => {
       return v.id == parsedServiceData[0].id ? {

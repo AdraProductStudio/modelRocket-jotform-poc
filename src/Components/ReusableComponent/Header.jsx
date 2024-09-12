@@ -65,7 +65,7 @@ const Header = () => {
                 <li className='col-12'>
                   <NavLink to={"/home/update_client"} className="nav-link rounded">
                     <span className='pe-4'><FaEdit className='fs-5' /></span>
-                    view clients info
+                    Edit clients info
                   </NavLink>
                 </li>
                 <li className='col-12'>
