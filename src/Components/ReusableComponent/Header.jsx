@@ -65,7 +65,7 @@ const Header = () => {
                 <li className='col-12'>
                   <NavLink to={"/home/update_client"} className="nav-link rounded">
                     <span className='pe-4'><FaEdit className='fs-5' /></span>
-                    Update client
+                    view clients info
                   </NavLink>
                 </li>
                 <li className='col-12'>
@@ -77,7 +77,7 @@ const Header = () => {
                 <li className='col-12'>
                   <NavLink to={"/home/view_live_customers"} className="nav-link rounded">
                     <span className='pe-4'><FaUsers className='fs-5' /></span>
-                    View Live customers
+                    Live&nbsp;clients
                   </NavLink>
                 </li>
                 <li className='col-12'>

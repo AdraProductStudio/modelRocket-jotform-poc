@@ -1,9 +1,9 @@
-body {
+*{
   margin: 0;
-  font-family: Poppins, sans-serif!important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -183,4 +183,29 @@ a.nav-link.active {
 .update-template-dropdown{
   height: 10rem;
   overflow-y: scroll;
+}
+
+.cutom-live-client-header{
+  background-color: #b7d4f892 !important;
+  color: #000000 !important;
+  margin: 6px !important;
+  padding: 12px !important;
+  font-weight: 700 !important;
+  border-bottom: 3px !important;
+}
+
+.cutom-live-client-card-text{
+  color: #737373 !important;
+}
+
+.cutom-live-client-card-title{
+  font-size: 16px !important;
+}
+
+.viewLiveCustomer-bg{
+  background-color: #ebf4ffc7;
+}
+
+.modal-rocket-card-title{
+  font-size: 16px !important;
 }
