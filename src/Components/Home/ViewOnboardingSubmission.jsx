@@ -112,7 +112,7 @@ const ViewOnboardingSubmission = () => {
 
                             <div className="col-12 mt-3">
                               <div className="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                <div className="progress-bar progress-bar-striped bg-info" style={{ width: `${progressPercentage}%` }}></div>
+                                <div className="progress-bar progress-bar-striped bg-primary" style={{ width: `${progressPercentage}%` }}></div>
                               </div>
                             </div>
                           </>

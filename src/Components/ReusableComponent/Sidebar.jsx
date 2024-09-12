@@ -1,10 +1,13 @@
-import React, { useContext, useEffect } from 'react'
-import { RxDashboard } from "react-icons/rx";
-import { MdBarChart } from "react-icons/md";
-import { BsBoxSeam } from "react-icons/bs";
+import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
 import { RiLogoutBoxLine } from "react-icons/ri";
 import Cookies from 'js-cookie';
+import { SiGoogledocs } from "react-icons/si";
+import { FaUsers } from "react-icons/fa";
+import { FaCloudUploadAlt } from "react-icons/fa";
+import { FaEdit } from "react-icons/fa";
+import { FaUserPlus } from "react-icons/fa";
+
 
 
 const Sidebar = () => {
@@ -12,8 +15,6 @@ const Sidebar = () => {
     const handleLogout = () => {
         Cookies.remove("isLoggedIn")
     }
-
-
 
     return (
         <div className='sidebar-width d-none d-lg-block border-end'>
@@ -28,32 +29,32 @@ const Sidebar = () => {
                     <ul className="sidebar-middle-links nav align-content-start nav_list p-0">
                         <li className='col-12'>
                             <NavLink to={"/home"} end className="nav-link rounded pe-0">
-                                <span className='pe-4'><RxDashboard className='fs-5' /></span>
+                                <span className='pe-4'><FaUserPlus className='fs-5' /></span>
                                 <span>Add client</span>
                             </NavLink>
                         </li>
                         <li className='col-12'>
                             <NavLink to={"/home/update_client"} className="nav-link rounded pe-0">
-                                <span className='pe-4'><BsBoxSeam className='fs-5' /></span>
+                                <span className='pe-4'><FaEdit className='fs-5' /></span>
                                 Update client
                             </NavLink>
                         </li>
                         <li className='col-12'>
                             <NavLink to={"/home/view_onboarding_submission"} className="nav-link rounded pe-0">
-                                <span className='pe-4'><BsBoxSeam className='fs-5' /></span>
-                                Onboarding&nbsp;Submission
+                                <span className='pe-4'><FaCloudUploadAlt className='fs-5' /></span>
+                                Onboarding&nbsp;submission
                             </NavLink>
                         </li>
                         <li className='col-12'>
                             <NavLink to={"/home/view_live_customers"} className="nav-link rounded pe-0">
-                                <span className='pe-4'><BsBoxSeam className='fs-5' /></span>
-                                Live&nbsp;Customers
+                                <span className='pe-4'><FaUsers className='fs-5' /></span>
+                                Live&nbsp;customers
                             </NavLink>
                         </li>
                         <li className='col-12'>
                             <NavLink to={"/home/mr_api_docs"} className="nav-link rounded pe-0">
-                                <span className='pe-4'><BsBoxSeam className='fs-5' /></span>
-                                MR Api Docs
+                                <span className='pe-4'><SiGoogledocs className='fs-5' /></span>
+                                MR API docs
                             </NavLink>
                         </li>
                     </ul>

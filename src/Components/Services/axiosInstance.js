@@ -39,9 +39,9 @@ const getToken = async () => {
 axiosInstance.interceptors.response.use(
     (response) => {
         if (response.data.error_code === 0 || response.data.error_code === 200) {
-            toast.success(response.data.message);
+            // toast.success(response.data.message);
         } else {
-            toast.error(response.data.message);
+            // toast.error(response.data.message);
         }
         return response;
     },

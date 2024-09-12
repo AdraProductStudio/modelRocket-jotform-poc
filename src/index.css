@@ -70,12 +70,12 @@ body {
 }
 
 a.nav-link {
-  color: #cecece;
+  color: #3f3f3f;
   margin: 0.5rem 0;
 }
 
 a.nav-link:hover {
-  color: #cecece;
+  color: #070707;
 }
 
 a.nav-link.active {
