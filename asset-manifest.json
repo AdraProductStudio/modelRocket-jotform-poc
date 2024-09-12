@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/modelRocket-jotform-poc/static/css/main.1cd9f7d4.css",
-    "main.js": "/modelRocket-jotform-poc/static/js/main.d37efd82.js",
+    "main.css": "/modelRocket-jotform-poc/static/css/main.bfa9c927.css",
+    "main.js": "/modelRocket-jotform-poc/static/js/main.c4ec28e1.js",
     "static/js/453.fc58dd71.chunk.js": "/modelRocket-jotform-poc/static/js/453.fc58dd71.chunk.js",
     "static/media/modelrocket_ai_logo.png": "/modelRocket-jotform-poc/static/media/modelrocket_ai_logo.ed3b09ca13ba36677227.png",
     "index.html": "/modelRocket-jotform-poc/index.html",
-    "main.1cd9f7d4.css.map": "/modelRocket-jotform-poc/static/css/main.1cd9f7d4.css.map",
-    "main.d37efd82.js.map": "/modelRocket-jotform-poc/static/js/main.d37efd82.js.map",
+    "main.bfa9c927.css.map": "/modelRocket-jotform-poc/static/css/main.bfa9c927.css.map",
+    "main.c4ec28e1.js.map": "/modelRocket-jotform-poc/static/js/main.c4ec28e1.js.map",
     "453.fc58dd71.chunk.js.map": "/modelRocket-jotform-poc/static/js/453.fc58dd71.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cd9f7d4.css",
-    "static/js/main.d37efd82.js"
+    "static/css/main.bfa9c927.css",
+    "static/js/main.c4ec28e1.js"
   ]
 }
