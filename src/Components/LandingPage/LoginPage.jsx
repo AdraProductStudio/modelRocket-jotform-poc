@@ -1,9 +1,8 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { PiEyeLight, PiEyeSlash } from "react-icons/pi";
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
-import axiosInstance from "../Services/axiosInstance";
 import axios from "axios";
 
 const LoginPage = () => {
@@ -33,12 +32,9 @@ const LoginPage = () => {
       if (inputDetails.username === "matsuri" && inputDetails.password === "modelrocket"){
         getToken()
 
-        setTimeout(()=>{
-          setLoading(false);
-          navigate("/home")
-
-          Cookies.set("isLoggedIn",true)
-        },1000)
+        // setTimeout(()=>{
+        //   Cookies.set("isLoggedIn",true)
+        // },1000)
       }else{
         setTimeout(()=>{
           setLoading(false);
@@ -67,7 +63,10 @@ const LoginPage = () => {
       
 
       if (response.data.error_code === 200) {
-        localStorage.setItem("token", response.data.data.token);
+        Cookies.set("token", response.data.data.token);
+
+        setLoading(false);
+        navigate("/home")
       }
     } catch (error) {
       console.error("Error getting token:", error);

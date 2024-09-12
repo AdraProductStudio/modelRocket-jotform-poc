@@ -7,7 +7,7 @@ import Cookies from "js-cookie";
 
 const AuthentatePage = () => {
   const auth = {
-    token: Cookies.get("isLoggedIn")
+    token: Cookies.get("token")
   };
 
   return (

@@ -11,9 +11,8 @@ import { FaUserPlus } from "react-icons/fa";
 const Header = () => {
 
   const handleLogout = () => {
-    Cookies.remove("isLoggedIn")
+    Cookies.remove("token")
   }
-
 
   return (
     <div className="header-component">

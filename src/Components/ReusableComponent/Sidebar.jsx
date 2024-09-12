@@ -13,7 +13,7 @@ import { FaUserPlus } from "react-icons/fa";
 const Sidebar = () => {
 
     const handleLogout = () => {
-        Cookies.remove("isLoggedIn")
+        Cookies.remove("token")
     }
 
     return (

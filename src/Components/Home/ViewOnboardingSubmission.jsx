@@ -3,7 +3,6 @@ import { useDropzone } from 'react-dropzone';
 import { LuUpload } from 'react-icons/lu';
 import { BsFiletypeCsv } from "react-icons/bs";
 import { AiTwotoneDelete } from "react-icons/ai";
-import axios from 'axios';
 import axiosInstance from '../Services/axiosInstance';
 
 const ViewOnboardingSubmission = () => {
