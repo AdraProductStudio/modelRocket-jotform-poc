@@ -167,7 +167,7 @@ a.nav-link.active {
 
 .uploadXLCard{
   border: 2px dotted grey !important;
-  background-color: rgba(128, 128, 128, 0.031) !important;
+  background-color: white !important;
   cursor: pointer;
 }
 
@@ -216,4 +216,20 @@ a.nav-link.active {
 
 .modal-iframe-height{
   height: calc(100vh - 10rem);
+}
+
+.heading-title{
+  width: 10rem !important;
+  color: rgb(68, 68, 68);
+}
+.heaing-content{
+  width: calc(100% - 10rem)!important;
+  color: rgb(68, 68, 68);
+}
+.main-title{
+  font-size: 1.3rem;
+}
+.table {
+  --bs-table-bg: transparent !important;
+  --bs-table-border-color:#aaaaaa !important
 }

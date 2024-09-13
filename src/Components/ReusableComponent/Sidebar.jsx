@@ -36,7 +36,7 @@ const Sidebar = () => {
                         <li className='col-12'>
                             <NavLink to={"/home/update_client"} className="nav-link rounded pe-0">
                                 <span className='pe-4'><FaEdit className='fs-5' /></span>
-                                Edit clients info
+                                Edit configurations
                             </NavLink>
                         </li>
                         <li className='col-12'>

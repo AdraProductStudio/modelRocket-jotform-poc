@@ -19,7 +19,7 @@ const AuthentatePage = () => {
             <Toaster />
             <div className="col p-0 overflow-auto">
               <Header />
-              <div className="main-content-height overflow-auto">
+              <div className="main-content-height overflow-auto viewLiveCustomer-bg">
                 <Outlet />
               </div>
             </div>
