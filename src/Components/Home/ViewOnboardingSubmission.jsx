@@ -148,7 +148,7 @@ const ViewOnboardingSubmission = () => {
 
                       {/* <h6 className='mb-2'>Drag &amp; Drop</h6> */}
                       <p className='mb-2'>Select files to upload</p>
-                      <p className="text-secondary"> Supports: xls only</p>
+                      <p className="text-secondary"> Supports: xls,xlsx only</p>
                     </div>
                   </div>
                 )}
