@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,17 +11,17 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 :root {
@@ -29,7 +29,7 @@
   --sidebar-top-logo-height: 12vh;
   --sidebar-middle-logo-height: 78vh;
   --sidebar-bottom-logo-height: 10vh;
-  --header-height: 7vh;
+  --header-height: 8.8vh;
 }
 
 
@@ -91,7 +91,8 @@ a.nav-link.active {
   height: var(--sidebar-bottom-logo-height);
   /* sidebar middle nav-links height=85vh */
 }
-.login-logo{
+
+.login-logo {
   width: 50%;
   height: 70px;
   display: block;
@@ -104,7 +105,7 @@ a.nav-link.active {
   margin: 0 auto;
 }
 
-.sidebar-logo{
+.sidebar-logo {
   width: 70%;
   height: 55px;
   display: block;
@@ -120,7 +121,7 @@ a.nav-link.active {
   margin: 0 auto;
 }
 
-.header-logo{
+.header-logo {
   width: 50%;
   height: 55px;
   display: block;
@@ -128,44 +129,52 @@ a.nav-link.active {
 }
 
 .header-component {
-  height: var(--header-height)!important;
+  height: var(--header-height) !important;
 }
 
 
 
 /* main content height  */
-.reportClass{
+.reportClass {
   height: 99%;
 }
-.main-content-height,.main-card-heightt{
+
+.main-content-height,
+.main-card-heightt {
   height: calc(100vh - var(--header-height));
 }
-.responsive-main-content-width{
+
+.responsive-main-content-width {
   width: calc(100% - var(--sidebar-width));
 }
-.matsuriAi-searchBar .fieldBar{
+
+.matsuriAi-searchBar .fieldBar {
   padding: .7rem;
 }
+
 .matsuriAi-searchBar {
   position: relative;
   cursor: pointer;
 }
+
 .matsuriAi-send-icon {
   position: absolute;
   top: 1.3rem;
   right: 1rem;
   font-size: 1.5rem;
 }
-.table-visibility{
+
+.table-visibility {
   visibility: hidden;
-  height: 10%!important;
-  overflow: hidden!important;
+  height: 10% !important;
+  overflow: hidden !important;
 }
-.hide-searchIcon{
+
+.hide-searchIcon {
   pointer-events: none;
 }
 
-.uploadXLCard{
+.uploadXLCard {
   border: 2px dotted grey !important;
   background-color: white !important;
   cursor: pointer;
@@ -176,16 +185,16 @@ a.nav-link.active {
   --bs-spinner-height: 1.5rem !important;
 }
 
-.card-height{
+.card-height {
   height: 30rem;
 }
 
-.update-template-dropdown{
+.update-template-dropdown {
   height: 10rem;
   overflow-y: scroll;
 }
 
-.cutom-live-client-header{
+.cutom-live-client-header {
   background-color: #b7d4f892 !important;
   color: #000000 !important;
   margin: 6px !important;
@@ -194,42 +203,67 @@ a.nav-link.active {
   border-bottom: 3px !important;
 }
 
-.cutom-live-client-card-text{
+.cutom-live-client-card-text {
   color: #737373 !important;
 }
 
-.cutom-live-client-card-title{
+.cutom-live-client-card-title {
   font-size: 16px !important;
 }
 
-.viewLiveCustomer-bg{
+.viewLiveCustomer-bg {
   background-color: #ebf4ffc7;
 }
 
-.modal-rocket-card-title{
+.modal-rocket-card-title {
   font-size: 16px !important;
 }
 
-.cursorPointer{
+.cursorPointer {
   cursor: pointer;
 }
 
-.modal-iframe-height{
+.modal-iframe-height {
   height: calc(100vh - 10rem);
 }
 
-.heading-title{
+.heading-title {
   width: 10rem !important;
   color: rgb(68, 68, 68);
 }
-.heaing-content{
-  width: calc(100% - 10rem)!important;
+
+.heaing-content {
+  width: calc(100% - 10rem) !important;
   color: rgb(68, 68, 68);
 }
-.main-title{
+
+.main-title {
   font-size: 1.3rem;
 }
+
 .table {
   --bs-table-bg: transparent !important;
-  --bs-table-border-color:#aaaaaa !important
+  --bs-table-border-color: #aaaaaa !important
+}
+
+
+@media (max-width:992px) {
+  .editCongigurationCardHeight {
+    height: 40rem !important;
+    overflow-y: scroll !important;
+  }
+}
+
+@media (min-width:992px) {
+  .editCongigurationCardHeight {
+    height: 45rem !important;
+    overflow-y: scroll !important;
+  }
+}
+
+@media (min-width:1440px) {
+  .editCongigurationCardHeight {
+    height: 49rem !important;
+    overflow-y: scroll !important;
+  }
 }

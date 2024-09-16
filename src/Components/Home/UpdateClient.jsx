@@ -108,67 +108,77 @@ const UpdateClient = () => {
   return (
     <div className="col-12">
       <div className='container-fluid'>
-        <div className="row justify-content-center main-card-heightt">
+        <div className="row justify-content-center main-card-heightt mx-3">
           <div className="col-md-10">
             {
               gettingData ?
-                <div className='w-100 h-100'>
-                  <div className="row h-100 justify-content-center align-content-center">
-                    <div className="col-5 text-center">
-                      <div class="spinner-border text-primary" role="status">
-                        <span class="visually-hidden">Loading...</span>
+                <div className="row h-100 justify-content-center align-content-center">
+                  <div className="card border-0 rounded-4 editCongigurationCardHeight">
+                    <div className="card-body row h-100 justify-content-center align-content-center">
+                      <div className="col-5 text-center">
+                        <div class="spinner-border text-primary" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p>Getting data</p>
                       </div>
-                      <p>Getting data</p>
                     </div>
                   </div>
                 </div>
                 :
-                <table class="table caption-top table-hover table-bordered ">
-                  <caption>Clients</caption>
-                  <thead>
-                    <tr>
-                      {/* <th scope="col">S.no</th> */}
-                      {
-                        tableHeadData.map((headVal, headInd) => {
-                          return headInd <= 3 ?
-                            <th scope="col" key={headInd}>{headVal}</th>
-                            :
-                            null
-                        })
-                      }
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {
-                      tableBodyData.map((bodayVal, bodyInd) => {
-                        return Object.values(bodayVal)[0] && Object.values(bodayVal)[1] ? <tr key={bodyInd}>
-                          {/* <th scope="row">{bodyInd + 1}</th> */}
-                          <td>{Object.values(bodayVal)[0]}</td>
-                          <td>{Object.values(bodayVal)[1]}</td>
-                          <td>
-                            <CiEdit className="fs-4 cursorPointer" onClick={() => {
-                              setEditingUrl(Object.values(bodayVal)[2])
-                              setShow(true)
-                            }} />
-                          </td>
-                          <td>{Object.values(bodayVal)[3]}</td>
-                        </tr>
-                          :
-                          null
-                      })
-                    }
+                <div className="row h-100 justify-content-center align-content-center overflow-hidden">
+                  <div className="card border-0 rounded-4 editCongigurationCardHeight">
+                    <div className="card-body ">
+                      <h5>Edit your form submission</h5>
+                      <div className="table-responsive mt-3">
+                        <table class="table table-hover table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              {/* <th scope="col">S.no</th> */}
+                              {
+                                tableHeadData.map((headVal, headInd) => {
+                                  return headInd <= 3 ?
+                                    <th scope="col" key={headInd}>{headVal}</th>
+                                    :
+                                    null
+                                })
+                              }
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {
+                              tableBodyData.map((bodayVal, bodyInd) => {
+                                return Object.values(bodayVal)[0] && Object.values(bodayVal)[1] ? <tr key={bodyInd}>
+                                  {/* <th scope="row">{bodyInd + 1}</th> */}
+                                  <td>{Object.values(bodayVal)[0]}</td>
+                                  <td>{Object.values(bodayVal)[1]}</td>
+                                  <td>
+                                    <CiEdit className="fs-4 cursorPointer" onClick={() => {
+                                      setEditingUrl(Object.values(bodayVal)[2])
+                                      setShow(true)
+                                    }} />
+                                  </td>
+                                  <td>{Object.values(bodayVal)[3]}</td>
+                                </tr>
+                                  :
+                                  null
+                              })
+                            }
 
-                  </tbody>
-                </table>
+                          </tbody>
+                        </table>
+                      </div>       
+                    </div>
+                  </div>
+                </div>
             }
           </div>
         </div>
       </div>
-      
+
 
       <Modal
         show={show}
-        size='xl' 
+        size='xl'
         onHide={() => setShow(false)}
         dialogClassName="modal-90w"
         aria-labelledby="example-custom-modal-styling-title"
@@ -177,7 +187,7 @@ const UpdateClient = () => {
         <Modal.Body>
           <div className='modal-iframe-height'>
             <div className="container-fluid h-100">
-              <iframe src={editingUrl} height={"100%"} width={"100%"}/>
+              <iframe src={editingUrl} height={"100%"} width={"100%"} />
             </div>
           </div>
         </Modal.Body>

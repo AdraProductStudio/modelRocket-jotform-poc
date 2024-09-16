@@ -36,19 +36,19 @@ const Sidebar = () => {
                         <li className='col-12'>
                             <NavLink to={"/home/update_client"} className="nav-link rounded pe-0">
                                 <span className='pe-4'><FaEdit className='fs-5' /></span>
-                                Edit configurations
+                                Edit submission
                             </NavLink>
                         </li>
-                        <li className='col-12'>
+                        {/* <li className='col-12'>
                             <NavLink to={"/home/view_onboarding_submission"} className="nav-link rounded pe-0">
                                 <span className='pe-4'><FaCloudUploadAlt className='fs-5' /></span>
                                 Onboarding&nbsp;submission
                             </NavLink>
-                        </li>
+                        </li> */}
                         <li className='col-12'>
                             <NavLink to={"/home/view_live_customers"} className="nav-link rounded pe-0">
                                 <span className='pe-4'><FaUsers className='fs-5' /></span>
-                                Live&nbsp;clients
+                                Demo environments
                             </NavLink>
                         </li>
                         <li className='col-12'>
