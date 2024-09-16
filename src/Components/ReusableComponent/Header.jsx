@@ -18,9 +18,9 @@ const Header = () => {
     <div className="header-component row justify-content-end w-100">
       <nav className="navbar navbar-expand-lg header-nav-tag  py-2 ">
         <div className="container justify-content-end w-100">
-          <div className="me-3 me-lg-0">
+          {/* <div className="me-3 me-lg-0">
               <button type="button" className="btn btn-primary" onClick={() => window.open('https://adraproductstudio.github.io/modelRocket-prototype-dev/')}>chat bot</button>
-          </div>
+          </div> */}
 
           <div>
             <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
