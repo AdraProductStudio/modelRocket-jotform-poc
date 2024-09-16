@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/modelrocket-customer-onboarding/static/css/main.1eb08e36.css",
-    "main.js": "/modelrocket-customer-onboarding/static/js/main.084b1fc9.js",
+    "main.js": "/modelrocket-customer-onboarding/static/js/main.b9e42f08.js",
     "static/js/453.fc58dd71.chunk.js": "/modelrocket-customer-onboarding/static/js/453.fc58dd71.chunk.js",
     "static/media/modelrocket_ai_logo.png": "/modelrocket-customer-onboarding/static/media/modelrocket_ai_logo.ed3b09ca13ba36677227.png",
     "index.html": "/modelrocket-customer-onboarding/index.html",
     "main.1eb08e36.css.map": "/modelrocket-customer-onboarding/static/css/main.1eb08e36.css.map",
-    "main.084b1fc9.js.map": "/modelrocket-customer-onboarding/static/js/main.084b1fc9.js.map",
+    "main.b9e42f08.js.map": "/modelrocket-customer-onboarding/static/js/main.b9e42f08.js.map",
     "453.fc58dd71.chunk.js.map": "/modelrocket-customer-onboarding/static/js/453.fc58dd71.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1eb08e36.css",
-    "static/js/main.084b1fc9.js"
+    "static/js/main.b9e42f08.js"
   ]
 }
