@@ -45,23 +45,26 @@ axiosInstance.interceptors.response.use(
         }
         return response;
     },
-    (error) => {
-        if (
-            error.response &&
-            error.response.status === 401 &&
-            error.response.data.msg === "Token has expired"
-        ) {
-            toast.error("Session expired, please try again...!");
-            getToken();
+    async (error) => {
+        try {
+            const originalRequest = error.config;
+            if (error.response && error.response.status === 401 && error.response.data.msg === "Token has expired") {
+                originalRequest._retry = true;
+                
+                toast.error("Session expired, please try again...!");
+                await getToken();
+                return axiosInstance(originalRequest);
+            }
+        } catch (err) {
+            return Promise.reject(error);
         }
-        return Promise.reject(error);
     }
 );
 
 axiosInstance.interceptors.request.use(
     (config) => {
         if (Cookies.get("token")) {
-            token =  Cookies.get("token");
+            token = Cookies.get("token");
         }
         config.headers.Authorization = `Bearer ${token}`;
 

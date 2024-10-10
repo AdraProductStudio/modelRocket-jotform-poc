@@ -60,8 +60,6 @@ const LoginPage = () => {
         }
       );
 
-      
-
       if (response.data.error_code === 200) {
         Cookies.set("token", response.data.data.token);
 

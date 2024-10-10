@@ -7,6 +7,7 @@ import UpdateClient from "./Components/Home/UpdateClient";
 import ViewOnboardingSubmission from "./Components/Home/ViewOnboardingSubmission";
 import ViewLiveCustomers from "./Components/Home/ViewLiveCustomers";
 import MrApiDocs from "./Components/Home/MrApiDocs";
+import { UpdateCallPrompt } from "./Components/Home/UpdateCallPrompt";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="update_client" element={<UpdateClient/>}/>
           <Route path="view_onboarding_submission" element={<ViewOnboardingSubmission/>}/>
           <Route path="view_live_customers" element={<ViewLiveCustomers/>}/>
+          <Route path="update_call_prompt" element={<UpdateCallPrompt/>}/>
           <Route path="mr_api_docs" element={<MrApiDocs/>}/>
         </Route>
 

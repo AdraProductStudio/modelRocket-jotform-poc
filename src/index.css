@@ -246,6 +246,18 @@ a.nav-link.active {
   --bs-table-border-color: #aaaaaa !important
 }
 
+.textarea_resize{
+  resize: none;
+}
+
+.spinner-border.textarea{
+  --bs-spinner-width: 1.2rem !important;
+  --bs-spinner-height: 1.2rem !important;
+}
+
+.prompt_placeholder_height{
+  height: 19rem;
+}
 
 @media (max-width:992px) {
   .editCongigurationCardHeight {
