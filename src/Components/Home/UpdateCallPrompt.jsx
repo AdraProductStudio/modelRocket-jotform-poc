@@ -119,7 +119,7 @@ export const UpdateCallPrompt = () => {
             <div className='container-fluid'>
                 <div className="d-flex flex-wrap main-card-heightt justify-content-center py-5">
 
-                    <div className=" col-12 col-md-10 col-lg-8">
+                    <div className=" col-12 col-md-10 col-lg-11 col-xl-8">
                         <div className="w-100">
                             <div className='card h-100 border-0 shadow rounded-3'>
                                 <div className="card-header cutom-live-client-header">
@@ -142,14 +142,14 @@ export const UpdateCallPrompt = () => {
                                         </div>
 
                                         <div className="col-12 d-flex flex-wrap mb-4">
-                                            <div className="col-8">
+                                            <div className="col-6 col-lg-8">
                                                 <h6 className='cutom-live-client-card-title'>Init message</h6>
                                             </div>
                                             {
                                                 selectedDataGlow ?
                                                     <>
-                                                        <div className="col-4 text-end">
-                                                            <button type="button" className="btn btn-sm placeholder col-5"></button>
+                                                        <div className="col-6 col-lg-4 text-end">
+                                                            <button type="button" className="btn btn-sm placeholder col-7 col-lg-5"></button>
                                                         </div>
                                                         <div className="col-12 mt-2">
                                                             <div className="placeholder w-100 rounded-1 py-3"></div>
@@ -157,16 +157,16 @@ export const UpdateCallPrompt = () => {
                                                     </>
                                                     :
                                                     <>
-                                                        <div className="col-4 text-end">
+                                                        <div className="col-6 col-lg-4 text-end">
                                                             {
                                                                 isInitMessageUpdating ?
-                                                                    <button type="button" className="btn btn-sm btn-primary col-4">
+                                                                    <button type="button" className="btn btn-sm btn-primary col-7 col-lg-5">
                                                                         <div class="spinner-border textarea text-light" role="status">
                                                                             <span class="visually-hidden">Loading...</span>
                                                                         </div>
                                                                     </button>
                                                                     :
-                                                                    <button type="button" className="btn btn-sm btn-primary col-4" disabled={isInitMessageDisable} onClick={handleUpdateInit}>
+                                                                    <button type="button" className="btn btn-sm btn-primary col-7 col-lg-5" disabled={isInitMessageDisable} onClick={handleUpdateInit}>
                                                                         <span><FaSave /></span>
                                                                         <span className="ms-1">Update</span>
                                                                     </button>
@@ -174,18 +174,6 @@ export const UpdateCallPrompt = () => {
 
                                                         </div>
                                                         <div className="col-12 mt-2">
-
-                                                            {/* <ReactQuill
-                                                                id='quillEditor'
-                                                                style={{ height: '200px', marginBottom: '3rem', height: '20rem', borderRadius: '2rem' }}
-                                                                theme="snow"
-                                                                modules={modules}
-                                                                formats={formats}
-                                                                value={textAreaData.inbound_prompt}
-
-
-                                                            /> */}
-
                                                             <textarea name="" id="" cols="30" rows="2" className="w-100 form-control textarea_resize" value={textAreaData.inbound_init_msg} onChange={(e) => {
                                                                 setisInitMessageDisable(false)
                                                                 setTextAreaData({ ...textAreaData, inbound_init_msg: e.target.value })
@@ -196,14 +184,14 @@ export const UpdateCallPrompt = () => {
                                         </div>
 
                                         <div className="col-12 d-flex flex-wrap">
-                                            <div className="col-8">
+                                            <div className="col-6 col-lg-8">
                                                 <h6 className='cutom-live-client-card-title'>Prompt</h6>
                                             </div>
                                             {
                                                 selectedDataGlow ?
                                                     <>
-                                                        <div className="col-4 text-end">
-                                                            <button type="button" className="btn btn-sm placeholder pe-none col-5"></button>
+                                                        <div className="col-6 col-lg-4 text-end">
+                                                            <button type="button" className="btn btn-sm placeholder pe-none col-7 col-lg-5"></button>
                                                         </div>
                                                         <div className="col-12 mt-2">
                                                             <div className="placeholder w-100 rounded-1 prompt_placeholder_height"></div>
@@ -211,16 +199,16 @@ export const UpdateCallPrompt = () => {
                                                     </>
                                                     :
                                                     <>
-                                                        <div className="col-4 text-end">
+                                                        <div className="col-6 col-lg-4 text-end">
                                                             {
                                                                 isPromptUpdating ?
-                                                                    <button type="button" className="btn btn-sm btn-primary col-4">
+                                                                    <button type="button" className="btn btn-sm btn-primary col-7 col-lg-5">
                                                                         <div class="spinner-border textarea text-light" role="status">
                                                                             <span class="visually-hidden">Loading...</span>
                                                                         </div>
                                                                     </button>
                                                                     :
-                                                                    <button type="button" className="btn btn-sm btn-primary col-4" disabled={isPromptDisable} onClick={handleUpdatePrompt}>
+                                                                    <button type="button" className="btn btn-sm btn-primary col-7 col-lg-5" disabled={isPromptDisable} onClick={handleUpdatePrompt}>
                                                                         <span><FaSave /></span>
                                                                         <span className="ms-1">Update</span>
                                                                     </button>

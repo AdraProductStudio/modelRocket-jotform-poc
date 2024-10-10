@@ -7,6 +7,7 @@ import { FaUsers } from "react-icons/fa";
 import { FaCloudUploadAlt } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
 import { FaUserPlus } from "react-icons/fa";
+import { IoIosCall } from 'react-icons/io';
 
 
 
@@ -53,7 +54,7 @@ const Sidebar = () => {
                         </li>
                         <li className='col-12'>
                             <NavLink to={"/home/update_call_prompt"} className="nav-link rounded pe-0">
-                                <span className='pe-4'><FaUsers className='fs-5' /></span>
+                                <span className='pe-4'><IoIosCall className='fs-5' /></span>
                                 Update call prompt
                             </NavLink>
                         </li>
