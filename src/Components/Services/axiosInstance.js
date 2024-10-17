@@ -5,7 +5,7 @@ import Cookies from "js-cookie";
 let token = null;
 
 const axiosInstance = axios.create({
-    baseURL: "https://consumerapi.matsuritech.com",
+    baseURL: process.env.REACT_APP_API_URL,
     headers: {
         "Content-Type": "application/json",
     },
@@ -19,7 +19,7 @@ const getToken = async () => {
         const basicAuth = "Basic " + btoa(`${username}:${password}`);
 
         const response = await axios.get(
-            "https://consumerapi.matsuritech.com/gettoken",
+            `${process.env.REACT_APP_API_URL}/gettoken`,
             {
                 headers: {
                     Authorization: basicAuth,

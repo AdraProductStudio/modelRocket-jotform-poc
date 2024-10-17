@@ -58,7 +58,8 @@ export const UpdateCallPrompt = () => {
             const res = await axiosInstance.post("/get_inbound_prompt", params);
             if (res.data.error_code === 200) {
                 setResponseData(res.data.data)
-                const replace = res.data.data.inbound_prompt.replace(/\\n/g, '\n');
+                const replace = res.data.data.inbound_prompt.replace(/\\n/g, '\n').replace(/\\"/g, '"');
+
                 setTextAreaData({
                     ...textAreaData,
                     inbound_prompt: res.data.data.inbound_prompt ? replace : '',
@@ -96,12 +97,11 @@ export const UpdateCallPrompt = () => {
     const handleUpdatePrompt = async () => {
         try {
             setisPromptUpdating(true)
-            console.log(textAreaData.inbound_init_msg, responseData)
 
             const params = {
                 client_name: responseData.client_name,
                 service_name: responseData.service_name,
-                prompt: textAreaData.inbound_prompt
+                prompt: JSON.stringify(textAreaData.inbound_prompt)
             }
 
             await axiosInstance.post("/update_inbound_prompt", params);
