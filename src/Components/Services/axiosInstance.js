@@ -13,8 +13,8 @@ const axiosInstance = axios.create({
 
 const getToken = async () => {
     try {
-        const username = "matsuri";
-        const password = "fc153ac36455604c6a6bcb3e22c0a4debfb746d59ad4a33a4b0d50f315206958d78da64e88957993e537e5ef235537a65ac0bc8fbaa725ae3e8e151617e82b81";
+        const username = process.env.REACT_APP_USERNAME;
+        const password = process.env.REACT_APP_PASSWORD;
 
         const basicAuth = "Basic " + btoa(`${username}:${password}`);
 
