@@ -19,8 +19,9 @@ export const UpdateCallPrompt = () => {
         "+12248013195",
         "+13312561559",
         "+14134775535",
-        "+14845724668",
+        "+14255288189",
     ]
+    
     const [responseData, setResponseData] = useState({})
     const [selectedDataGlow, setSelectedDataGlow] = useState(false);
     const [isInitMessageUpdating, setisInitMessageUpdating] = useState(false);
